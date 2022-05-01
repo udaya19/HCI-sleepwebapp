@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Inter,Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+button{
+    cursor: pointer;
+}
+/*Nav*/
+nav{
+    background-color: black;
+    position: relative;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anchor--title{
+    color: white;
+    position: absolute;
+    top: 40px;
+   
+    font-size: 20px;
+}
+li{
+    list-style: none;
+    padding-bottom: 15px;
+}
+a{
+    text-decoration: none;
+}
+.list__item{
+    color: white;
+    font-size: 17px;
+}
+
+.list__item:hover{
+    color: orange;
+}
+
+@media screen and (min-width:768px) {
+    nav{
+        position: relative;
+    }
+    .list{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+    }
+    li{
+        margin-right: 20px;
+        padding: 30px;
+    }
+    .anchor--title{
+        position: absolute;
+        top: 19px;
+        left: 10px;
+    }
+
+}
+
+/*Meditation Info*/
+.meditation--info{
+    margin-top: 50px;
+    margin-left: 10px;
+    display: flex;
+}
+.meditation__text__heading{
+    font-size: 39px;
+    font-weight: 500;
+}
+
+.meditation__text__para{
+    font-size: 17px;
+    opacity: 0.5;
+    margin-top: 10px;
+}
+
+.meditation__text button{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    
+}
+
+.meditation__text button:hover{
+    transform: scale(1.2);
+    background-color: orange;
+}
+
+.meditation__text .fa-brands{
+    font-size: 30px;
+}
+
+.fa-app-store-ios{
+    color: blue;
+}
+
+.fa-google-play{
+    color: rgb(162, 162, 199);
+}
+
+.meditation__banner__image img{
+    width: 200px; 
+    height: 300px;
+}
+
+@media screen and (min-width:768px) {
+    .meditation--info{
+        margin-left: 200px;
+    } 
+    .meditation__banner__image img{
+        width: 500px; 
+        height: 500px;
+        margin-left: 50px;
+    } 
+}
+
+/*Benifits of meditaion*/
+
+.meditation__benifits__heading{
+    text-align: center;
+    margin-top: 30px;
+    color: orange;
+    font-size: 40px;
+}
+
+.mobile{
+    display: flex;
+}
+
+.meditation__benifits__text{
+    margin: 35px;
+}
+
+@media screen and (min-width:768px) {
+    .meditation__benifits__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+    .meditation__benifits__text{
+        font-size: 20px;
+    }
+}
+
+/*Learn to meditate*/
+
+.learn--meditation__heading h2{
+    text-align: center;
+    margin-top: 30px;
+    color: orange;
+    font-size: 40px;
+}
+
+.swamiji img{
+    width: 200px;
+    height: 250px;
+    margin-left: 30px;
+}
+
+.swamiji__info p{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.swamiji__info button{
+    font-size: 25px;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none ;
+}
+
+/* 800x967 */
+
+@media screen and (min-width:768px) {
+    .swamiji img{
+        width: 500px;
+        height: 600px;
+        
+    }
+    .flex{
+        display: flex;
+    }
+    .swamiji__info p{
+        margin-top: 50px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .swamiji__info button{
+        font-size: 20px;
+        padding: 15px 25px;
+        transition: background-color 0.5s ease;
+    }
+    .swamiji__info button:hover{
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+    }
+}
+
+/*Testimonials*/
+
+.testimonials__heading h2{
+    text-align: center;
+    margin-top: 30px;
+    color: orange;
+    font-size: 40px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    box-shadow: 0px 0px 30px 4px black;
+  }
+  .swiper-slide p{
+      font-size: 20px;
+      font-weight: 400;
+      margin-left: 10px;
+  }
