@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="header">
@@ -26,7 +27,7 @@
         </nav>
     </div>
     <div class="info">
-        <div class="info__main">
+        <div class="info__main" data-aos="fade-up" data-aos-duration="1000">
             <h1 class="info__heading">Wake up easily with SleepEx</h1>
             <p class="info__content">
                 SleepEx helps you to monitor your sleep and helps you to sleep better, <br>
@@ -39,9 +40,9 @@
 
 
     <div class="about--us" id="aboutus">
-        <h2 class="aboutus__title">About Us</h2>
+        <h2 class="aboutus__title" data-aos="fade-right">About Us</h2>
         <div class="grid">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <div class="card__header">
                     <h1 class="card__title">
                         Our Objective
@@ -58,7 +59,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card card2">
+            <div class="card card2" data-aos="fade-down">
                 <div class="card__header">
                     <h1 class="card__title">
                         Our Motivation
@@ -80,11 +81,11 @@
    
 
     <div class="about--sleep" id="aboutsleep">
-        <h2 class="about--sleep__title">
+        <h2 class="about--sleep__title" data-aos="fade-left">
             About Sleep
         </h2>
         <div class="grid">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <div class="card__header">
                     <h1 class="card__title">
                        Why Sleep is important?
@@ -101,7 +102,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-down">
                 <div class="card__header">
                     <h1 class="card__title">
                        Disadvantages due lack of sleep
@@ -121,17 +122,17 @@
         </div>
     </div>
     <div class="services" id="services">
-            <h2 class="services__title">
+            <h2 class="services__title" data-aos="fade-up">
                 Services
             </h2>
             <div class="services__grid">
                 <div class="services__content">
                     <div class="services__img">
-                        <img src="/sleep-main.png" alt="">
+                        <img src="/sleep-main.png" alt="" data-aos="zoom-in">
                     </div>
                     <div class="services__text">
-                        <h3 class="services__text__heading">Track your sleep</h3>
-                        <p class="services__text__content">
+                        <h3 class="services__text__heading" data-aos="zoom-out">Track your sleep</h3>
+                        <p class="services__text__content" data-aos="fade-left">
                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                                Fugiat ut sed libero temporibus similique, quod ullam,ab veniam impedit, <br>
                                consequuntur porro cupiditate beatae perferendis! <br>
@@ -144,11 +145,11 @@
             <div class="services__grid">
                 <div class="services__content services__reverse">
                     <div class="services__img">
-                        <img src="/meditation.png" alt="">
+                        <img src="/meditation.png" alt="" data-aos="zoom-in">
                     </div>
                     <div class="services__text">
-                        <h3 class="services__text__heading">Meditate Now</h3>
-                        <p class="services__text__content">
+                        <h3 class="services__text__heading" data-aos="zoom-out">Meditate Now</h3>
+                        <p class="services__text__content" data-aos="fade-right">
                             Meditation slows down your heart rate and lowers <br>
                             the levels of the stress hormone cortisol in your body, <br>
                             two things that happen naturally when you sleep. Meditation <br>
@@ -162,4 +163,8 @@
             </div>
     </div>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
