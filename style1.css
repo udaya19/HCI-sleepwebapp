@@ -22,11 +22,11 @@ nav{
     align-items: center;
 }
 
-.anchor--title{
+.title{
     color: white;
     position: absolute;
-    top: 40px;
-   
+    top: 20px;
+    /* left: 10px; */
     font-size: 20px;
 }
 li{
@@ -59,10 +59,11 @@ a{
         margin-right: 20px;
         padding: 30px;
     }
-    .anchor--title{
+    .title{
         position: absolute;
         top: 19px;
         left: 10px;
+        font-size: 30px;
     }
 
 }
